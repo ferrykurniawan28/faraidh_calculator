@@ -1,0 +1,129 @@
+{
+  "appTitle": "Islamic Inheritance Calculator",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "heirsCount": "{count} people",
+  "@heirsCount": {
+    "description": "Number of heirs",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "totalAssets": "Total: Rp {amount}",
+  "@totalAssets": {
+    "description": "Total assets amount",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "heirPortion": "Share: Rp {amount}",
+  "@heirPortion": {
+    "description": "Heir's inheritance portion",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "addHeir": "Add Heir",
+  "addAsset": "Add Asset",
+  "calculate": "Calculate Inheritance",
+  "reset": "Reset All",
+  "settings": "Settings",
+  "language": "Language",
+  "selectLanguage": "Select Language",
+  "english": "English",
+  "indonesian": "Indonesian",
+  "heirName": "Heir Name",
+  "enterFullName": "Enter full name",
+  "heirType": "Heir Type",
+  "gender": "Gender",
+  "male": "Male",
+  "female": "Female",
+  "assetName": "Asset Name",
+  "enterAssetName": "Enter asset name",
+  "assetType": "Asset Type",
+  "assetValue": "Asset Value (Rp)",
+  "enterAssetValue": "Enter asset value",
+  "description": "Description (Optional)",
+  "addAssetDescription": "Add asset description",
+  "heirsList": "List of Heirs",
+  "assetsList": "List of Assets",
+  "noHeirsYet": "No heirs added yet",
+  "startByAddingFirstHeir": "Start by adding the first heir",
+  "noAssetsYet": "No assets added yet",
+  "startByAddingFirstAsset": "Start by adding the first asset",
+  "nameCannotBeEmpty": "Name cannot be empty",
+  "assetNameCannotBeEmpty": "Asset name cannot be empty",
+  "assetValueCannotBeEmpty": "Asset value cannot be empty",
+  "assetValueMustBePositive": "Asset value must be a positive number",
+  "deleteHeir": "Delete Heir",
+  "deleteAsset": "Delete Asset",
+  "areYouSureDeleteHeir": "Are you sure you want to delete {name}?",
+  "@areYouSureDeleteHeir": {
+    "description": "Confirmation message for deleting heir",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "areYouSureDeleteAsset": "Are you sure you want to delete {name}?",
+  "@areYouSureDeleteAsset": {
+    "description": "Confirmation message for deleting asset",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "husband": "Husband",
+  "wife": "Wife",
+  "father": "Father",
+  "mother": "Mother",
+  "son": "Son",
+  "daughter": "Daughter",
+  "brother": "Brother",
+  "sister": "Sister",
+  "grandfather": "Grandfather",
+  "grandmother": "Grandmother",
+  "grandson": "Grandson",
+  "granddaughter": "Granddaughter",
+  "other": "Other",
+  "house": "House",
+  "land": "Land",
+  "car": "Car",
+  "money": "Money",
+  "gold": "Gold",
+  "stocks": "Stocks",
+  "savings": "Savings",
+  "islamicInheritance": "Islamic Inheritance",
+  "accurateCalculation": "Accurate Calculation",
+  "easyToUse": "Easy to Use",
+  "quickResults": "Quick Results",
+  "inheritanceDistribution": "Inheritance Distribution",
+  "totalInheritance": "Total Inheritance",
+  "learnMore": "Learn More",
+  "getStarted": "Get Started",
+  "poweredBy": "Powered by",
+  "developedWith": "Developed with ❤️ using Flutter",
+  "rightsReserved": "All rights reserved.",
+  "about": "About",
+  "privacy": "Privacy",
+  "terms": "Terms",
+  "contact": "Contact",
+  "noDataToDisplay": "No data to display",
+  "noInheritanceCalculation": "No inheritance calculation yet",
+  "warning": "Warning",
+  "cannotHaveHusbandAndWife": "Cannot have both husband and wife in the same inheritance calculation",
+  "addAtLeastOneHeir": "Add at least one heir",
+  "addAtLeastOneAsset": "Add at least one asset",
+  "duplicateHeirNames": "There are duplicate heir names"
+}
