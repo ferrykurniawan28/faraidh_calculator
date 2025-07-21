@@ -125,5 +125,7 @@
   "cannotHaveHusbandAndWife": "Cannot have both husband and wife in the same inheritance calculation",
   "addAtLeastOneHeir": "Add at least one heir",
   "addAtLeastOneAsset": "Add at least one asset",
-  "duplicateHeirNames": "There are duplicate heir names"
+  "duplicateHeirNames": "There are duplicate heir names",
+  "disclaimer": "Disclaimer",
+  "inheritanceDisclaimer": "This calculator provides basic inheritance calculations according to Islamic law. For complex cases or official legal matters, please consult qualified Islamic scholars or legal experts."
 }

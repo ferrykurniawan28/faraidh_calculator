@@ -271,4 +271,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get duplicateHeirNames => 'There are duplicate heir names';
+
+  @override
+  String get disclaimer => 'Disclaimer';
+
+  @override
+  String get inheritanceDisclaimer =>
+      'This calculator provides basic inheritance calculations according to Islamic law. For complex cases or official legal matters, please consult qualified Islamic scholars or legal experts.';
 }

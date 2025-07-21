@@ -82,5 +82,7 @@
   "cannotHaveHusbandAndWife": "Tidak boleh ada suami dan istri bersamaan dalam satu perhitungan waris",
   "addAtLeastOneHeir": "Tambahkan minimal satu ahli waris",
   "addAtLeastOneAsset": "Tambahkan minimal satu aset",
-  "duplicateHeirNames": "Terdapat nama ahli waris yang sama"
+  "duplicateHeirNames": "Terdapat nama ahli waris yang sama",
+  "disclaimer": "Penafian",
+  "inheritanceDisclaimer": "Kalkulator ini menyediakan perhitungan waris dasar menurut hukum Islam. Untuk kasus yang kompleks atau urusan hukum resmi, silakan berkonsultasi dengan ahli hukum Islam atau pakar hukum yang berkualitas."
 }

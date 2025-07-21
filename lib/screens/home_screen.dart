@@ -10,6 +10,7 @@ import '../widgets/heirs_list.dart';
 import '../widgets/assets_list.dart';
 import '../widgets/inheritance_pie_chart.dart';
 import '../widgets/validation_message.dart';
+import '../widgets/disclaimer_widget.dart';
 import 'settings_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -55,6 +56,12 @@ class HomeScreen extends StatelessWidget {
                             }
                           },
                         ),
+
+                        // Disclaimer (only show if calculation has been done)
+                        if (state.isCalculated) ...[
+                          const SizedBox(height: 24),
+                          const DisclaimerWidget(),
+                        ],
                       ],
                     ),
                   ),

@@ -272,4 +272,11 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get duplicateHeirNames => 'Terdapat nama ahli waris yang sama';
+
+  @override
+  String get disclaimer => 'Penafian';
+
+  @override
+  String get inheritanceDisclaimer =>
+      'Kalkulator ini menyediakan perhitungan waris dasar menurut hukum Islam. Untuk kasus yang kompleks atau urusan hukum resmi, silakan berkonsultasi dengan ahli hukum Islam atau pakar hukum yang berkualitas.';
 }

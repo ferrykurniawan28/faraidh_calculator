@@ -601,6 +601,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'There are duplicate heir names'**
   String get duplicateHeirNames;
+
+  /// No description provided for @disclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'Disclaimer'**
+  String get disclaimer;
+
+  /// No description provided for @inheritanceDisclaimer.
+  ///
+  /// In en, this message translates to:
+  /// **'This calculator provides basic inheritance calculations according to Islamic law. For complex cases or official legal matters, please consult qualified Islamic scholars or legal experts.'**
+  String get inheritanceDisclaimer;
 }
 
 class _AppLocalizationsDelegate
