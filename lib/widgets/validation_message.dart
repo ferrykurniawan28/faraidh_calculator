@@ -5,16 +5,24 @@ import '../models/heir.dart';
 class ValidationMessage extends StatelessWidget {
   final List<Heir> heirs;
   final List assets;
+  final bool showValidation;
 
   const ValidationMessage({
     super.key,
     required this.heirs,
     required this.assets,
+    this.showValidation = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+
+    // Only show validation errors if showValidation is true
+    if (!showValidation) {
+      return const SizedBox.shrink();
+    }
+
     final validationErrors = _getValidationErrors(l10n);
 
     if (validationErrors.isEmpty) {

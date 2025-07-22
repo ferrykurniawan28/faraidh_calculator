@@ -5,24 +5,16 @@ import '../models/inheritance_state.dart';
 class InheritanceCalculatorService {
   /// Menghitung pembagian waris berdasarkan hukum Islam
   InheritanceState calculateInheritance(List<Heir> heirs, List<Asset> assets) {
-    if (heirs.isEmpty || assets.isEmpty) {
-      return InheritanceState(
-        heirs: heirs,
-        assets: assets,
-        totalAssetValue: _calculateTotalAssetValue(assets),
-        isCalculated: false,
-      );
-    }
-
     double totalAssetValue = _calculateTotalAssetValue(assets);
 
-    // Validasi kombinasi ahli waris
-    if (!_isValidHeirCombination(heirs)) {
+    // Check for validation errors
+    if (heirs.isEmpty || assets.isEmpty || !_isValidHeirCombination(heirs)) {
       return InheritanceState(
         heirs: heirs,
         assets: assets,
         totalAssetValue: totalAssetValue,
         isCalculated: false,
+        hasValidationError: true,
       );
     }
 
@@ -33,6 +25,7 @@ class InheritanceCalculatorService {
       assets: assets,
       totalAssetValue: totalAssetValue,
       isCalculated: true,
+      hasValidationError: false,
     );
   }
 
@@ -42,6 +35,13 @@ class InheritanceCalculatorService {
     bool hasWife = heirs.any((h) => h.type == HeirType.istri);
 
     if (hasHusband && hasWife) {
+      return false;
+    }
+
+    // Validasi duplikasi nama ahli waris
+    final names = heirs.map((h) => h.name.toLowerCase()).toList();
+    final uniqueNames = names.toSet();
+    if (names.length != uniqueNames.length) {
       return false;
     }
 

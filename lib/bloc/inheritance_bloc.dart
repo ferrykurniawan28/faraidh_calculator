@@ -23,21 +23,39 @@ class InheritanceBloc extends Bloc<InheritanceEvent, InheritanceState> {
 
   void _onAddHeir(AddHeirEvent event, Emitter<InheritanceState> emit) {
     final updatedHeirs = List<Heir>.from(state.heirs)..add(event.heir);
-    emit(state.copyWith(heirs: updatedHeirs, isCalculated: false));
+    emit(
+      state.copyWith(
+        heirs: updatedHeirs,
+        isCalculated: false,
+        hasValidationError: false,
+      ),
+    );
   }
 
   void _onRemoveHeir(RemoveHeirEvent event, Emitter<InheritanceState> emit) {
     final updatedHeirs = state.heirs
         .where((heir) => heir.id != event.heirId)
         .toList();
-    emit(state.copyWith(heirs: updatedHeirs, isCalculated: false));
+    emit(
+      state.copyWith(
+        heirs: updatedHeirs,
+        isCalculated: false,
+        hasValidationError: false,
+      ),
+    );
   }
 
   void _onUpdateHeir(UpdateHeirEvent event, Emitter<InheritanceState> emit) {
     final updatedHeirs = state.heirs.map((heir) {
       return heir.id == event.heir.id ? event.heir : heir;
     }).toList();
-    emit(state.copyWith(heirs: updatedHeirs, isCalculated: false));
+    emit(
+      state.copyWith(
+        heirs: updatedHeirs,
+        isCalculated: false,
+        hasValidationError: false,
+      ),
+    );
   }
 
   void _onAddAsset(AddAssetEvent event, Emitter<InheritanceState> emit) {
@@ -51,6 +69,7 @@ class InheritanceBloc extends Bloc<InheritanceEvent, InheritanceState> {
         assets: updatedAssets,
         totalAssetValue: totalValue,
         isCalculated: false,
+        hasValidationError: false,
       ),
     );
   }
@@ -68,6 +87,7 @@ class InheritanceBloc extends Bloc<InheritanceEvent, InheritanceState> {
         assets: updatedAssets,
         totalAssetValue: totalValue,
         isCalculated: false,
+        hasValidationError: false,
       ),
     );
   }
@@ -85,6 +105,7 @@ class InheritanceBloc extends Bloc<InheritanceEvent, InheritanceState> {
         assets: updatedAssets,
         totalAssetValue: totalValue,
         isCalculated: false,
+        hasValidationError: false,
       ),
     );
   }

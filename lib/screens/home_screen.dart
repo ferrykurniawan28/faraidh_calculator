@@ -41,6 +41,7 @@ class HomeScreen extends StatelessWidget {
                         ValidationMessage(
                           heirs: state.heirs,
                           assets: state.assets,
+                          showValidation: state.hasValidationError,
                         ),
                         const SizedBox(height: 24),
 
